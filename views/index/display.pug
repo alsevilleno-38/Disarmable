@@ -1,0 +1,16 @@
+extends ../layout/base.pug
+
+block style
+    link(rel="stylesheet", href="/css/color.css")
+block content
+    h1(class=(items.length > 0 ? "green" : "red")) Displaying...
+    ul
+        if items.length > 0
+            each item in items
+                li 
+                    a(href=`/details/${item.id}`) ID: #{item.id}
+                    |  | Name: #{item.name} | Age: #{item.age} | Title: #{item.title}
+        else
+            p No Items
+            
+                

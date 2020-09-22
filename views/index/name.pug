@@ -1,0 +1,9 @@
+extends ../layout/base.pug
+
+block content
+    p Name
+    p #{name}
+    div
+        a(href=`/details/${id}`) Go back
+    div
+        a(href="/display") List

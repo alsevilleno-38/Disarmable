@@ -1,0 +1,8 @@
+extends ../layout/base.pug
+block content    
+    form(action="/order", method="POST", style="display:flex; flex-direction:column; gap:0.3rem")
+        div
+            label(for="name") Name: 
+            input(id="name", name="name")
+        div
+            input(type="submit" value="Submit")

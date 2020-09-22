@@ -1,0 +1,12 @@
+extends ../layout/base.pug
+
+block content
+    h3 Details
+    if item === undefined
+        h4 No item to display
+    else
+        p 
+            a(href=`${item.id}/${item.name}`) #{item.name}
+        p #{item.age}
+        p #{item.title}
+    a(href="/display") Back to List

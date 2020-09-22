@@ -1,0 +1,25 @@
+{
+  "name": "Disarmable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && ex  it 1",
+    "start": "nodemon --inspect -e js,css,jsx index.js",
+    "nodemon": "nodemon -e js,css,jsx"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "express-react-views": "^0.11.0",
+    "pug": "^3.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "request": "^2.79.0"
+  }
+}

@@ -1,0 +1,35 @@
+extends ../layout/base.pug
+block style
+    link(rel="stylesheet", href="/css/customer.css")
+block content
+    .form
+        h3 Customer Fill Out Form
+        p Please fill the inputs
+        form.form-inputs(method="POST") 
+            .form-input                
+                label.form-input--label(for="name") Name
+                input.form-input--input(type="text" placeholder="Name" name="name" id="name")
+            .form-input                
+                label.form-input--label(for="age") Age
+                input.form-input--input(type="text" placeholder="Age" name="age" id="age")                
+            .form-input                
+                label.form-input--label(for="contact") Contact Number
+                input.form-input--input(type="text" placeholder="Contact Number" name="contact" id="contact")
+            .form-input                
+                label.form-input--label(for="email") Email
+                input.form-input--input(type="email" placeholder="Email" name="email" id="email")                
+            .form-input                
+                label.form-input--label(for="password") Password
+                input.form-input--input(type="password" placeholder="Password" name="password" id="password")
+            .form-input                
+                label.form-input--label(for="repeatPass") Repeat Password
+                input.form-input--input(type="password" placeholder="Repeat Password" name="repeatPass" id="repeatPass")
+            hr
+            p.form-terms By creating an account you agree to our 
+                a(href="/") Terms & Privacy
+                |.
+                
+            .form-submit
+                button.form-input--submit(type="submit") Submit
+
+            
